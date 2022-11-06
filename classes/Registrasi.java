@@ -2,12 +2,12 @@ import java.util.ArrayList ;
 import java.util.Date ;
 import java.util.List ;
 
-public class JalurPendaftaran{
+public class Registrasi{
     private String NoAntri ;
     private Dokter Dokter ;
     private Date Tanggal ;
     private int Biaya ;
-    private List<JalurPendaftaran> Antrian = new ArrayList<JalurPendaftaran>() ;
+    private List<Registrasi> Antrian = new ArrayList<Registrasi>() ;
 
     public Dokter getDokter() {
         return Dokter;
