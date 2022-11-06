@@ -7,7 +7,7 @@ public class Registrasi {
     private Dokter Dokter ;
     private Date Tanggal ;
     private int Biaya ;
-    private List<Registrasi> Antrian = new ArrayList<Registrasi>() ;
+    private List<detailAntrian> Antrian = new ArrayList<detailAntrian>() ;
 
     public Registrasi (){
         NoAntri = "A1" ;
@@ -40,6 +40,10 @@ public class Registrasi {
     }
     public void setBiaya (int Biaya) {
         this.Biaya = Biaya ;
+    }
+
+    public int Biaya(int b){
+        return Biaya;
     }
 
 }
