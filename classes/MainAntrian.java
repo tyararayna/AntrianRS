@@ -1,28 +1,25 @@
 import java.util.Scanner;
 
 public class MainAntrian {
-    private boolean ulang; 
-    private Pasien p1;
+    static Scanner in = new Scanner(System.in);
     private jalurPendaftaran jp;
     private Dokter dr;
-    private detailAntrian antri;
-    public Scanner input = new Scanner(System.in);
+    private Pasien ps;
     
-    public MainAntrian(){
-        
-    }
-
     public void mulai(){
-        p1 = new Pasien(0, "Pasien1");
-
-        System.out.print("Masukkan Nama : ");
-        String nama = input.nextLine();
-        p1.setNama(nama);
+        ps = new Pasien();
+        //ps.printNama();
         
-        dr = new Dokter("Ayu", 1);
-        dr.dataPoli();
-
+        jp = new jalurPendaftaran(1);
+        jp.jenisDaftar();
+        
+        //dr = new Dokter("Fatiya", 1);
+        //dr.jenisPoli(1);
+        
+        //jp.Biaya();
+        //System.out.println(jp.Biaya());
     }
+    
     public static void main(String[] args) {
         MainAntrian main = new MainAntrian();
     
