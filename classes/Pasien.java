@@ -1,32 +1,29 @@
 import java.util.Scanner;
 public class Pasien{
-    int id;
+    int ktp;
     String nama,jalurPendaftaran;
-    Pasien next;
+    public Pasien next;
+    
     static Scanner in=new Scanner(System.in);
     static Scanner str=new Scanner(System.in);
+    
+    public Pasien(){
+        
+    }
+    
+    public String getNama()
+    {
+        return this.nama;
+    }
+    
     public void input(){
         System.out.print("Masukkan No ktp : ");
-        id=in.nextInt();
+        ktp = in.nextInt();
         System.out.print("Masukkan nama   : ");
-        nama=str.nextLine();
+        nama = str.nextLine();
         next=null;
     }
     public void read(){
-        System.out.println("|| "+id+" \t|| "+nama+" \t|| "+jalurPendaftaran+" \t||");
-    }
-    public static void main(String[] args){
-        int menu=0;
-        detailAntrian que=new detailAntrian();
-        while(menu!=4){
-            System.out.print("1.Enqueue\n2.Dequeue\n3.View\n4.Exit\n : ");
-            menu=in.nextInt();
-            if(menu==1)que.enque();
-            else if(menu==2)que.deque();
-            else if(menu==3)que.view();
-            else if(menu==4)System.out.println("- keluar -");
-            else System.out.println("- Salah -");
-            System.out.println("");
-        }
+        System.out.println("|| "+ktp+" \t|| "+nama+" \t|| "+jalurPendaftaran+" \t||");
     }
 }

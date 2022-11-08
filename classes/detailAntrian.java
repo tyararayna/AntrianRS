@@ -1,3 +1,5 @@
+import java.util.LinkedList;
+
 public class detailAntrian{
     Pasien head,tail;
     public detailAntrian(){
@@ -7,20 +9,26 @@ public class detailAntrian{
     public void enque(){
         Pasien baru=new Pasien();
         baru.input();
-        if(head==null)head=baru;
-        else tail.next=baru;
-        tail=baru;
+        if(head==null){
+            head=baru;
+        }
+        else {
+            //tail.next=baru;
+            tail=baru;
+        }
     }
     public void deque(){
-        if(head==null)System.out.println("- Data Kosong -");
-        else{
-            System.out.println("Data Keluar Sesuai No ktp : "+head.id);
+        if(head==null){
+            System.out.println("- Data Kosong -");
+        }else{
+            System.out.println("Data Keluar Sesuai No ktp : "+head.ktp);
             head=head.next;
         }
     }
     public void view(){
-        if(head==null)System.out.println("- Data Kosong -");
-        else{
+        if(head==null){
+            System.out.println("- Data Kosong -");
+        }else{
             System.out.println("|| Id \t|| Nama \t|| Keperluan \t||");
             for(Pasien a=head; a!=null; a=a.next) a.read();
         }
