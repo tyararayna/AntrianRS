@@ -1,44 +1,26 @@
+import java.util.Scanner ;
+
 public class Pasien {
     private int ktp;
     private String nama;
     private String noantri ;
     private int biayasementara ;
 
-        public Pasien(int ktp, String nama) {
-            this.ktp = ktp;
-            this.nama = nama;
-        }
-    
-        public int getKtp() {
-            return ktp;
-        }
-    
-        public void setKtp(int ktp) {
-            this.ktp = ktp;
-        }
-    
-        public String getNama() {
-            return nama;
-        }
-    
-        public void setNama(String nama) {
-            this.nama = nama;
-        }
-    
-        public String getnoantri() {
-            return noantri;
-        }
-    
-        public void setNoantri(String noantri) {
-            this.noantri = noantri;
-        }
+    static Scanner in = new Scanner(System.in);
+    static Scanner str = new Scanner(System.in);
 
-        public int getBiayasementara() {
-            return biayasementara;
-        }
-    
-        public void setBiayasementara( int biayasementara) {
-            this.biayasementara = biayasementara ;
-        }
-    
+    public void input(){
+        System.out.println();
+        System.out.println("\t\t\t\t\tMasukkan No Ktp :") ;
+        ktp = in.nextInt();
+        System.out.println("\t\t\t\t\tMasukkan Nama :") ;
+        nama = str.nextLine(); 
     }
+
+    public void read(){
+        System.out.println("\t\t\t\t|| " + ktp + "\t|| " +nama+" \t\t|| " );
+        
+    }
+}
+
+        
