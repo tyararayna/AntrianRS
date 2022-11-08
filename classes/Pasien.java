@@ -17,7 +17,7 @@ public class Pasien{
     }
     public static void main(String[] args){
         int menu=0;
-        linked que=new linked();
+        detailAntrian que=new detailAntrian();
         while(menu!=4){
             System.out.print("1.Enqueue\n2.Dequeue\n3.View\n4.Exit\n : ");
             menu=in.nextInt();

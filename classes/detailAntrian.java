@@ -1,6 +1,6 @@
-class linked{
+public class detailAntrian{
     Pasien head,tail;
-    public linked(){
+    public detailAntrian(){
         head=null;
         tail=null;
     }
