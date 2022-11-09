@@ -7,15 +7,24 @@ public class Pasien{
     static Scanner in=new Scanner(System.in);
     static Scanner str=new Scanner(System.in);
     
-    public Pasien(){
-        
+    /*
+    * Method constructor pada kelas Pasien
+    * 
+    */
+    public Pasien(){ 
     }
     
+    /*
+    * Method Accessor yang berfungsi untuk mengembalikan nama
+    */
     public String getNama()
     {
         return this.nama;
     }
     
+    /*
+    * berguna untuk menginput data dari user agar bisa dimasukkan ke dalam antrian
+    */
     public void input(){
         System.out.print("Masukkan No ktp : ");
         ktp = in.nextInt();

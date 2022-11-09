@@ -1,35 +1,48 @@
 import java.util.Scanner;
-/**
- * Write a description of class jalurPendaftaran here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
+
 public class jalurPendaftaran extends Registrasi
 {
-    // instance variables - replace the example below with your own
+    
     private int jenis;
     private int Biaya;
     private Scanner input = new Scanner(System.in);
-        
+
+    /*
+    * Method constructor pada kelas jalurPendaftaran dengan parameter jenis 
+    */  
     public jalurPendaftaran(int jenis)
     {
         
     }
     
+    /*
+    * Method mutator yang berfungsi untuk mengubah atau mengatur Jenis
+    */
     public void setJenis(int j){
         this.jenis = j;
     }
-    
+
+    /*
+    * Method yang berfungsi untuk mengembalikan Jenis
+    */
     public int getJenis()
     {
         return jenis;
     }
     
+    
+    /*
+    * Method mutator untuk mengubah atau mengatur Biaya
+    */
     public void setBiaya(int b){
         this.Biaya = b;
     }
     
+    /**
+    * Tampilan untuk pemilihan menu Jalur Daftar yang tersedia
+    * Pasien dapat memilih jalur BPJS, Asuransi, atau Pribadi
+    * 
+    */
     public void jenisDaftar(){
         do{
             System.out.println("=========Jalur Daftar=========");
