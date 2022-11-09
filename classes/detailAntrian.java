@@ -1,5 +1,9 @@
 import java.util.LinkedList;
 
+/**
+ * @author (Tyara Raynasari & Ayu Aulia)
+ * @version (2108107010030 & 2108107010038)
+ */
 public class detailAntrian{
     Pasien head,tail;
     

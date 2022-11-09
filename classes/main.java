@@ -1,10 +1,9 @@
 import java.util.Scanner;
 /**
- * Write a description of class main here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Tyara Raynasari & Ayu Aulia)
+ * @version (2108107010030 & 2108107010038)
  */
+
 public class main
 {
     static Scanner in = new Scanner(System.in);
