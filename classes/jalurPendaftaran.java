@@ -1,5 +1,9 @@
 import java.util.Scanner;
 
+/**
+ * @author (Tyara Raynasari & Ayu Aulia)
+ * @version (2108107010030 & 2108107010038)
+ */
 public class jalurPendaftaran extends Registrasi
 {
     // instance variables - replace the example below with your own

@@ -1,4 +1,9 @@
 import java.util.Scanner;
+
+/**
+ * @author (Tyara Raynasari & Ayu Aulia)
+ * @version (2108107010030 & 2108107010038)
+ */
 public class Pasien{
     /*
      * merupakan variabel pada kelas pasien 
