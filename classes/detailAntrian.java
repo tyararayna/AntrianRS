@@ -17,10 +17,9 @@ public class detailAntrian{
         if(head == null){
             head = baru;
         }
-        else {
+        else
             tail.next = baru;
             tail = baru;
-        }
     }
     public void deque(){
         if(head == null){
