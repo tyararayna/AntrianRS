@@ -74,38 +74,44 @@ public class main
                 pilihan = in.nextInt();
             
                 if(pilihan == 1){
+                    System.out.println("");
                     Poli[0].display();
                     System.out.println("Dokter : " + arr[0].display()); 
                 }else if(pilihan == 2){
+                    System.out.println("");
                     Poli[1].display();
                     System.out.print("Dokter : " + arr[1].display());
                 }else if(pilihan == 3){
+                    System.out.println("");
                     Poli[2].display();
                     System.out.print("Dokter : " + arr[2].display());
                 }else if(pilihan == 4){
+                    System.out.println("");
                     Poli[3].display();
                     System.out.print("Dokter : " + arr[3].display());
                 }else if(pilihan == 5){
+                    System.out.println("");
                     Poli[4].display();
                     System.out.print("Dokter : " + arr[4].display());
                 }else if(pilihan == 6){
+                    System.out.println("");
                     Poli[5].display();
                     System.out.print("Dokter : " + arr[5].display());
                 }else{
                     System.out.println("Tidak tersedia");
                 }
                 }
-            else if(menu==2){
-                que.deque();
-            }
-            else if(menu==3){
-                que.view();
-            }else if(menu==4){
-                System.out.println("- Keluar -");
-            }else {
-                System.out.println("- Salah -");
-                System.out.println("");
-            }
+        else if(menu==2){
+            que.deque();
+        }
+        else if(menu==3){
+            que.view();
+        }else if(menu==4){
+            System.out.println("- Keluar -");
+        }else {
+            System.out.println("- Salah -");
+            System.out.println("");
+        }
             
         System.out.println("");
         }while(menu != 4);
