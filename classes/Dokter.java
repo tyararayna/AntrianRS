@@ -18,6 +18,7 @@ public class Dokter {
     
         /*
         * Method yang berfungsi untuk mengembalikan Nama
+        * @return nama
         */
         public String getNama(){
             return nama;
@@ -32,6 +33,7 @@ public class Dokter {
         
         /*
         * method yang berfungsi untuk mengembalikan nama dari value yang telah diinput kedalam array nya
+        * @return nama
         */
         public String display(){
             return nama;
