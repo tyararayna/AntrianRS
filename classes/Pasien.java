@@ -5,7 +5,6 @@ public class Pasien{
      */
     int ktp;
     String nama;
-    private jalurPendaftaran jp;
     public Pasien next;
     
     static Scanner in=new Scanner(System.in);

@@ -25,7 +25,7 @@ public class Poli {
         public void setRuang(){
             this.ruang = ruang ;
         }
-
+        
         public void display(){
             System.out.print(namaPoli + " di Ruang " + ruang + "\n");
         }
