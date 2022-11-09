@@ -45,7 +45,9 @@ public class main
         int menu=0;
         //m.mulai();
         
-
+    /*
+     * ini merupakan Array untuk menyimpan nama-nama dokter 
+     */
         Dokter[] arr;
         
         arr = new Dokter[6];
@@ -57,6 +59,9 @@ public class main
         arr[5] = new Dokter("dr. Soleh");
         int pilihan = 0;
         
+    /*
+     * ini merupakan Array untuk menyimpan nama-nama dokter 
+     */
         Poli[] Poli ;
         
         Poli = new Poli[6];

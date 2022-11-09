@@ -1,5 +1,8 @@
 import java.util.Scanner;
 public class Pasien{
+    /*
+     * merupakan variabel pada kelas pasien 
+     */
     int ktp;
     String nama;
     private jalurPendaftaran jp;
