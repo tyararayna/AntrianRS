@@ -24,7 +24,16 @@ public class main
         //jp.Biaya();
         //System.out.println(jp.Biaya());
     }
-    
+    public void pilihPoli(){
+        System.out.println("\n\tPilih jenis poli : ");
+        System.out.println("\t\t\t 1. Poli Umum");
+        System.out.println("\t\t\t 2. Poli Kulit");
+        System.out.println("\t\t\t 3. Poli Mata");
+        System.out.println("\t\t\t 4. Poli THT");
+        System.out.println("\t\t\t 5. Poli Gigi");
+        System.out.println("\t\t\t 6. Poli Kandungan\n");
+    }
+
     public static void main(String[] args){
         main m = new main();
         int menu=0;
@@ -51,29 +60,24 @@ public class main
         Poli[4] = new Poli("Poli Gigi", 5);
         Poli[5] = new Poli("Poli Kandungan", 6);
 
-        System.out.println("\tPilih jenis poli : ");
-            System.out.println("\t\t\t 1. Poli Umum");
-            System.out.println("\t\t\t 2. Poli Kulit");
-            System.out.println("\t\t\t 3. Poli Mata");
-            System.out.println("\t\t\t 4. Poli THT");
-            System.out.println("\t\t\t 5. Poli Gigi");
-            System.out.println("\t\t\t 6. Poli Kandungan\n");
-            System.out.print("\t\t\t Masukkan Pilihan Anda : ");
+        m.pilihPoli();
+        System.out.print("\t\t\t Masukkan Pilihan Anda : ");
         
-            pilihan = in.nextInt();
+        pilihan = in.nextInt();
             
             if(pilihan == 1){
-                System.out.print("Dokter :" + arr[0].display()); 
+                Poli[0].display();
+                System.out.print("Dokter : " + arr[0].display()); 
             }else if(pilihan == 2){
-                System.out.print("Dokter :" + arr[1].display());
+                System.out.print("Dokter : " + arr[1].display());
             }else if(pilihan == 3){
-                System.out.print("Dokter :" + arr[2].display());
+                System.out.print("Dokter : " + arr[2].display());
             }else if(pilihan == 4){
-                System.out.print("Dokter :" + arr[3].display());
+                System.out.print("Dokter : " + arr[3].display());
             }else if(pilihan == 5){
-                System.out.print("Dokter :" + arr[4].display());
+                System.out.print("Dokter : " + arr[4].display());
             }else if(pilihan == 6){
-                System.out.print("Dokter :" + arr[5].display());
+                System.out.print("Dokter : " + arr[5].display());
             }else{
                 System.out.println("Tidak tersedia");
             }
