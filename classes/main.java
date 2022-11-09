@@ -43,7 +43,7 @@ public class main
     public static void main(String[] args){
         main m = new main();
         int menu=0;
-        m.mulai();
+        //m.mulai();
         
 
         Dokter[] arr;
@@ -66,11 +66,21 @@ public class main
         Poli[3] = new Poli("Poli THT", 4);
         Poli[4] = new Poli("Poli Gigi", 5);
         Poli[5] = new Poli("Poli Kandungan", 6);
-
-        m.pilihPoli();
-        System.out.print("\t\t\t Masukkan Pilihan Anda : ");
+            
+        detailAntrian que=new detailAntrian();
+        do{
         
-        pilihan = in.nextInt();
+        System.out.println("\n1. Ingin Ambil Antrian\n2. Print Antrian\n3. Lihat Data Antrian\n4. Keluar ");
+        System.out.println("Masukkan Pilihan Anda : ");
+            menu = in.nextInt();
+            
+            if(menu==1){
+                que.enque();
+                
+                m.pilihPoli();
+                System.out.print("\t\t\t Masukkan Pilihan Anda : ");
+            
+                pilihan = in.nextInt();
             
             if(pilihan == 1){
                 Poli[0].display();
@@ -93,14 +103,6 @@ public class main
             }else{
                 System.out.println("Tidak tersedia");
             }
-            
-        detailAntrian que=new detailAntrian();
-        do{
-            System.out.print("\n1.Enqueue\n2.Dequeue\n3.View\n4.Exit\n : ");
-            menu = in.nextInt();
-            
-            if(menu==1){
-                que.enque();   
             }
             else if(menu==2){
                 que.deque();
@@ -113,10 +115,9 @@ public class main
                 System.out.println("- Salah -");
                 System.out.println("");
             }
-            
-            m.mulai();
-            
+        
+        System.out.println("");
         }while(menu != 4);
     }
 
-}    
+}
