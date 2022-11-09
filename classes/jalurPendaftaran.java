@@ -6,28 +6,30 @@ import java.util.Scanner;
  */
 public class jalurPendaftaran extends Registrasi
 {
-    // instance variables - replace the example below with your own
     private int jenis;
     private int Biaya;
     private Scanner input = new Scanner(System.in);
     
-    /*
+    /**
     * Method constructor pada kelas jalurPendaftaran dengan parameter jenis 
+    * @param jenis
     */ 
     public jalurPendaftaran(int jenis)
     {
         this.jenis = jenis;
     }
     
-    /*
+    /**
     * Method mutator yang berfungsi untuk mengubah atau mengatur Jenis
+    * @param j (jenis)
     */
     public void setJenis(int j){
         this.jenis = j;
     }
     
-    /*
+    /**
     * Method yang berfungsi untuk mengembalikan Jenis
+    * @return jenis
     */
     public int getJenis()
     {
@@ -37,7 +39,6 @@ public class jalurPendaftaran extends Registrasi
     /**
     * Tampilan untuk pemilihan menu Jalur Daftar yang tersedia
     * Pasien dapat memilih jalur BPJS, Asuransi, atau Pribadi
-    * 
     */
     public void jenisDaftar(){
         do{
@@ -61,9 +62,10 @@ public class jalurPendaftaran extends Registrasi
             Biaya();
     }
     
-    /*
+    /**
      * untuk menampilkan ke layar biaya jalur pendaftaran yang sesuai dipilih oleh user
      */
+    
     public void Biaya()
     {
         do{
@@ -76,21 +78,24 @@ public class jalurPendaftaran extends Registrasi
             }
         
         }while(getJenis() > 3);
-            //return 0;
+
     }
 
-    /*
+    /**
     * Method mutator untuk mengubah atau mengatur Biaya
+    * @param b 
     */
     public void setBiaya(int b){
         this.Biaya = b;
     }
     
-    /*
+    /**
     * Method Accesor untuk mengembalikan biaya
+    * @return Biaya
     */
+
     public int getBiaya(){
-        return this.Biaya;
+        return Biaya;
     }
     
 }
