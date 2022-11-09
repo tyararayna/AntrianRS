@@ -69,14 +69,19 @@ public class main
                 Poli[0].display();
                 System.out.print("Dokter : " + arr[0].display()); 
             }else if(pilihan == 2){
+                Poli[1].display();
                 System.out.print("Dokter : " + arr[1].display());
             }else if(pilihan == 3){
+                Poli[2].display();
                 System.out.print("Dokter : " + arr[2].display());
             }else if(pilihan == 4){
+                Poli[3].display();
                 System.out.print("Dokter : " + arr[3].display());
             }else if(pilihan == 5){
+                Poli[4].display();
                 System.out.print("Dokter : " + arr[4].display());
             }else if(pilihan == 6){
+                Poli[5].display();
                 System.out.print("Dokter : " + arr[5].display());
             }else{
                 System.out.println("Tidak tersedia");
