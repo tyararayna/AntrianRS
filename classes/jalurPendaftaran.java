@@ -37,15 +37,15 @@ public class jalurPendaftaran extends Registrasi
     */
     public void jenisDaftar(){
         do{
-            System.out.println("=========Jalur Daftar=========");
-            System.out.println("\t\t1. BPJS");
+            System.out.println("\t\t\t\t===== Jalur Pendaftaran =====\t\t\t");
+            System.out.println("\n\t\t1. BPJS");
             System.out.println("\t\t2. Asuransi");
             System.out.println("\t\t3. Pribadi");
-            System.out.print("Masukkan pilihan anda :");
+            System.out.print("\nMasukkan pilihan anda :");
             jenis = input.nextInt();
                 
             if (jenis == 1) {
-                System.out.println("Anda Memilih Jalur BPJS");
+                System.out.println("\nAnda Memilih Jalur BPJS");
             }else if (jenis == 2){
                 System.out.println("Anda Memilih Jalur Asuransi");
             }else if (jenis == 3){
@@ -55,9 +55,11 @@ public class jalurPendaftaran extends Registrasi
             
         }while(jenis > 3);
             Biaya();
-        
     }
     
+    /*
+     * untuk menampilkan ke layar biaya jalur pendaftaran yang sesuai dipilih oleh user
+     */
     public void Biaya()
     {
         do{
@@ -79,7 +81,6 @@ public class jalurPendaftaran extends Registrasi
     public void setBiaya(int b){
         this.Biaya = b;
     }
-    
     
     /*
     * Method Accesor untuk mengembalikan biaya
