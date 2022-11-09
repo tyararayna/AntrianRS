@@ -12,7 +12,8 @@ public class main
     private Dokter dr;
     private Pasien ps;
     private int pilihan;
-    
+    private Poli poli ;
+
     public void mulai(){
         ps = new Pasien();
         //ps.printNama();
@@ -40,6 +41,16 @@ public class main
         arr[5] = new Dokter("dr. Soleh");
         int pilihan = 0;
         
+        Poli[] Poli ;
+        
+        Poli = new Poli[6];
+        Poli[0] = new Poli("Poli Umum", 1);
+        Poli[1] = new Poli("Poli Kulit", 2);
+        Poli[2] = new Poli("Poli Mata", 3);
+        Poli[3] = new Poli("Poli THT", 4);
+        Poli[4] = new Poli("Poli Gigi", 5);
+        Poli[5] = new Poli("Poli Kandungan", 6);
+
         System.out.println("\tPilih jenis poli : ");
             System.out.println("\t\t\t 1. Poli Umum");
             System.out.println("\t\t\t 2. Poli Kulit");
