@@ -26,6 +26,10 @@ public class jalurPendaftaran extends Registrasi
         return jenis;
     }
     
+    public void setBiaya(int b){
+        this.Biaya = b;
+    }
+    
     public void jenisDaftar(){
         do{
             System.out.println("=========Jalur Daftar=========");
@@ -44,7 +48,23 @@ public class jalurPendaftaran extends Registrasi
             }
             
         }while(jenis > 3);
+            Biaya();
         
     }
     
+    public int Biaya()
+    {
+    do{
+        
+        if(getJenis() == 1){
+            return Biaya; 
+        }else if(getJenis() == 2){
+            return Biaya += 25000;
+        }else if(getJenis() == 3){
+            return Biaya += 50000;
+        }
+    
+    }while(getJenis() > 3);
+        return 0;
+    }
 }
