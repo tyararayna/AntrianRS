@@ -24,7 +24,7 @@ public class main
         //jp.Biaya();
         //System.out.println(jp.Biaya());
     }
-    
+
     /**
     * Tampilan menu untuk memilih jenis poli 
     * Pasien dapat memilih jenis poli 1,2,3,4,5, dan 6
@@ -111,7 +111,7 @@ public class main
                 que.view();
             }else if(menu==4){
                 System.out.println("- keluar -");
-            }else {
+           }else {
                 System.out.println("- Salah -");
                 System.out.println("");
             }

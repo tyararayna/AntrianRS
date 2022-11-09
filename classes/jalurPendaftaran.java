@@ -5,6 +5,7 @@ public class jalurPendaftaran extends Registrasi
     
     private int jenis;
     private int Biaya;
+    private String view;
     private Scanner input = new Scanner(System.in);
 
     /*
@@ -80,4 +81,5 @@ public class jalurPendaftaran extends Registrasi
     }while(getJenis() > 3);
         return 0;
     }
+
 }

@@ -30,8 +30,11 @@ public class detailAntrian{
         if(head==null){
             System.out.println("- Data Kosong -");
         }else{
-            System.out.println("|| Id \t|| Nama \t|| Keperluan \t||");
-            for(Pasien a=head; a!=null; a=a.next) a.read();
+            System.out.println("=====================================") ;
+            System.out.println(" Id \t\t Nama \t\t ");
+            System.out.println("=====================================") ;
+            for(Pasien a=head; a!=null; a=a.next)
+            a.read();
         }
     }
 }

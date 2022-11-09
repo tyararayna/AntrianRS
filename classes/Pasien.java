@@ -1,7 +1,8 @@
 import java.util.Scanner;
 public class Pasien{
     int ktp;
-    String nama,jalurPendaftaran;
+    String nama;
+    private jalurPendaftaran jp;
     public Pasien next;
     
     static Scanner in=new Scanner(System.in);
@@ -33,6 +34,6 @@ public class Pasien{
         next=null;
     }
     public void read(){
-        System.out.println("|| "+ktp+" \t|| "+nama+" \t|| "+jalurPendaftaran+" \t||");
+        System.out.println(ktp +"\t\t "+nama+" \t\t ");
     }
 }
