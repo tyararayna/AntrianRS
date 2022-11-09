@@ -9,6 +9,9 @@ public class Registrasi {
     private int Biaya ;
     private List<detailAntrian> Antrian = new ArrayList<detailAntrian>() ;
 
+    /* Method Constructor untuk objek kelas Registrasi
+     * 
+     */
     public Registrasi (){
         NoAntri = "A1" ;
         Biaya = 25000 ;

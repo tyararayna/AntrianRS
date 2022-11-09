@@ -24,6 +24,12 @@ public class main
         //jp.Biaya();
         //System.out.println(jp.Biaya());
     }
+    
+    /**
+    * Tampilan menu untuk memilih jenis poli 
+    * Pasien dapat memilih jenis poli 1,2,3,4,5, dan 6
+    * 
+    */
     public void pilihPoli(){
         System.out.println("\n\tPilih jenis poli : ");
         System.out.println("\t\t\t 1. Poli Umum");
@@ -39,6 +45,7 @@ public class main
         int menu=0;
         m.mulai();
         
+
         Dokter[] arr;
         
         arr = new Dokter[6];
