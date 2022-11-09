@@ -75,8 +75,8 @@ public class main
             
                 if(pilihan == 1){
                     System.out.println("");
-                    Poli[0].display();
-                    System.out.println("Dokter : " + arr[0].display()); 
+                    Poli[0].display(); // disini menggunakan konsep polimorfisme
+                    System.out.println("Dokter : " + arr[0].display()); // disini menggunakan konsep polimorfisme
                 }else if(pilihan == 2){
                     System.out.println("");
                     Poli[1].display();
