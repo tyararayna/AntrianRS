@@ -5,7 +5,7 @@ import java.util.Scanner;
  * @version (2108107010030 & 2108107010038)
  */
 public class Pasien{
-    /*
+    /**
      * merupakan variabel pada kelas pasien 
      */
     int ktp;
@@ -15,23 +15,25 @@ public class Pasien{
     static Scanner in=new Scanner(System.in);
     static Scanner str=new Scanner(System.in);
     
-    /*
+    /**
     * Method constructor pada kelas Pasien
     * 
     */
     public Pasien(){ 
     }
     
-    /*
+    /**
     * Method Accessor yang berfungsi untuk mengembalikan nama
+    * @return nama
     */
     public String getNama()
     {
-        return this.nama;
+        return nama;
     }
     
-    /*
+    /**
     * berguna untuk menginput data dari user agar bisa dimasukkan ke dalam antrian
+    *
     */
     public void input(){
         System.out.print("Masukkan No ktp : ");
@@ -40,6 +42,9 @@ public class Pasien{
         nama = str.nextLine();
         next=null;
     }
+    /**
+     * method untuk membaca hasil inputan yang berupa nama dan ktp
+     */
     public void read(){
         System.out.println(ktp +"\t\t "+nama+" \t\t ");
     }
