@@ -100,7 +100,7 @@ public class main
                 }else{
                     System.out.println("Tidak tersedia");
                 }
-                }
+            }
         else if(menu==2){
             que.deque();
         }

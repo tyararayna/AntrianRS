@@ -1,11 +1,9 @@
-import java.util.Scanner;
 
 /**
  * @author (Tyara Raynasari & Ayu Aulia)
  * @version (2108107010030 & 2108107010038)
  */
 public class Poli {
-    public Scanner input = new Scanner(System.in);
     private String namaPoli;
     private int pilihan;
     private int ruang ;
