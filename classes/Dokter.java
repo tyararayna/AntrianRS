@@ -9,7 +9,7 @@ public class Dokter {
     //private Pasien ps;
     
         public Dokter(String nama) {
-            
+            this.nama = nama;
         }
     
         public String getNama(){
@@ -20,7 +20,7 @@ public class Dokter {
             this.nama = nama;
         }
         
-        public void display(){
-            System.out.print(nama);
+        public String display(){
+            return nama;
         }
 }

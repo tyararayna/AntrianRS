@@ -32,7 +32,12 @@ public class main
         Dokter[] arr;
         
         arr = new Dokter[6];
-        arr[0] = new Dokter("Ayu");
+        arr[0] = new Dokter("dr. Fatimah");
+        arr[1] = new Dokter("dr. Siti Hajar");
+        arr[2] = new Dokter("dr. Solehah");
+        arr[3] = new Dokter("dr. Zainal");
+        arr[4] = new Dokter("drg. Ratika");
+        arr[5] = new Dokter("dr. Soleh");
         int pilihan = 0;
         
         System.out.println("\tPilih jenis poli : ");
@@ -47,8 +52,19 @@ public class main
             pilihan = in.nextInt();
             
             if(pilihan == 1){
-                System.out.print(" dengan Dokter :" ); 
-                arr[0].display();
+                System.out.print("Dokter :" + arr[0].display()); 
+            }else if(pilihan == 2){
+                System.out.print("Dokter :" + arr[1].display());
+            }else if(pilihan == 3){
+                System.out.print("Dokter :" + arr[2].display());
+            }else if(pilihan == 4){
+                System.out.print("Dokter :" + arr[3].display());
+            }else if(pilihan == 5){
+                System.out.print("Dokter :" + arr[4].display());
+            }else if(pilihan == 6){
+                System.out.print("Dokter :" + arr[5].display());
+            }else{
+                System.out.println("Tidak tersedia");
             }
             
         detailAntrian que=new detailAntrian();
