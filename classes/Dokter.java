@@ -3,10 +3,6 @@ import java.util.Scanner;
 public class Dokter {
     public Scanner input = new Scanner(System.in);
     private String nama;
-    //private String[] poli;
-    //private int[] Ruang;
-    private int pilihan;
-    //private Pasien ps;
     
         /*
         * Method constructor pada kelas Dokter
